@@ -22,23 +22,26 @@ const bodyStyles = css`
   font-kerning: none;
   background-color: #232934;
   overflow-x: hidden;
+  margin-left: 157.5px !important;
+  margin-right: 157.5px !important;
 `;
 
 const headerStyles = css`
   position: fixed;
+  margin: 0;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   padding-top: 3.125rem;
   display: block;
+  background-color: #232934;
 `;
 
 const headerContainerStyles = css`
   // o-container
   display: flex;
-  padding-left: 157.5px;
-  padding-right: 157.5px;
+
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -47,6 +50,7 @@ const headerContainerStyles = css`
 const innerHeaderContainerStylesLeft = css`
   // c-site-head__inner
   display: flex;
+  align-items: center;
 `;
 
 const innerHeaderContainerStylesRight = css`
@@ -63,13 +67,79 @@ const headerLinkContainer = css`
   list-style-type: disc;
 `;
 
-const headerButtonContainer = css``;
+const headerButtonContainer = css`
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.8125rem 1.375rem;
+  background-color: #fff;
+  will-change: transform;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background: none transparent;
+  color: inherit;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: none;
+  font: inherit;
+  box-sizing: inherit;
+  line-height: normal;
+  cursor: pointer;
+  visibility: inherit;
+`;
+
+const headerButtonMask = css`
+  transform: matrix(1, 0, 0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  background-color: #ff3665;
+  z-index: 2;
+  box-sizing: inherit;
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-transform: none;
+  font: inherit;
+  line-height: normal;
+  visibility: inherit;
+  box-sizing: inherit;
+`;
+
+const headerButtonTextTop = css`
+  background-color: #fff;
+  color: #000;
+  transition-duration: 0.8s;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.8125rem 1.375rem;
+  font-weight: 700;
+  text-align: center;
+  transition-property: transform, -webkit-transform;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  box-sizing: inherit;
+  font-size: 0.75rem;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  visibility: inherit;
+`;
+
+const headerButtonTextBottom = css``;
 
 const headerLink = css`
   color: #fff;
   font-weight: 700;
   opacity: 0.75;
   box-sizing: inherit;
+  text-decoration: none;
 `;
 
 const logoContainer = css`
@@ -83,10 +153,22 @@ const logoContainer = css`
   margin-inline-end: 40px;
 `;
 
+const bodyContainer = css`
+  box-sizing: inherit;
+  display: block;
+  font-size: 1.0625rem;
+  color: #fff;
+  font-family: MarkPro;
+  line-height: 1.6;
+  -webkit-text-size-adjust: none;
+  padding-top: 200px;
+  text-align: center;
+`;
+
 function App() {
   return (
     <div css={bodyStyles}>
-      <header css={headerStyles}>
+      <div css={headerStyles}>
         <div css={headerContainerStyles}>
           <div css={innerHeaderContainerStylesLeft}>
             <figure css={logoContainer}>
@@ -131,14 +213,100 @@ function App() {
                 Sign in{' '}
               </a>
             </div>
-            <div css={headerLinkContainer}>
-              <a href="https://www.resolute.ai" css={headerLink}>
-                Button{' '}
-              </a>
+            <div css={headerButtonContainer}>
+              <div css={headerButtonMask} />
+              <div css={headerButtonTextTop}>
+                <span>Request a demo</span>
+              </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+      <div css={bodyContainer}>glorb</div>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
+      <br />
+      <p>glorb</p>
     </div>
   );
 }
